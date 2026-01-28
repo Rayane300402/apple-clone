@@ -105,7 +105,7 @@ body {
     @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
 
     nav {
-      @apply container mx-auto flex-between px-5 2xl:px-0;
+      @apply container mx-auto flex-between px-10;
 
       img {
         @apply cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;
@@ -126,7 +126,7 @@ body {
   }
 
   #hero {
-    @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
+    @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[14vh];
 
     div {
       @apply relative z-10 col-center lg:translate-y-16;
@@ -154,17 +154,17 @@ body {
   }
 
   #product-view {
-    @apply container relative min-h-[93vh] mx-auto px-5 2xl:px-0 mt-40;
+    @apply container relative min-h-[93vh] mx-auto px-10 mt-40;
 
     h2 {
       @apply text-white font-sf-pro font-semibold text-3xl lg:text-6xl;
     }
 
     .controls {
-      @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
+      @apply absolute z-50 bottom-40 left-1/2 -translate-x-1/2;
 
       .info {
-        @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
+        @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg flex-center;
       }
 
       .color-control {
@@ -180,7 +180,7 @@ body {
       }
 
       .size-control {
-        @apply small-medium flex-between bg-neutral-800 rounded-full px-6 py-2.5 gap-2;
+        @apply small-medium flex-between bg-neutral-800 rounded-full px-6 py-2.5 gap-3;
 
         div {
           @apply size-8 rounded-full cursor-pointer bg-white text-black flex-center;
@@ -189,7 +189,7 @@ body {
     }
 
     #canvas {
-      @apply !w-full !h-[80vh] lg:!h-dvh relative z-40;
+      @apply w-full! h-[80vh]! lg:h-dvh! relative z-40;
     }
   }
 
@@ -244,26 +244,26 @@ body {
     }
 
     .wrapper {
-      @apply w-7xl 2xl:w-[100rem] h-[50vh] lg:h-screen relative;
+      @apply w-7xl 2xl:w-400 h-[50vh] lg:h-screen relative;
 
       img {
-        @apply max-w-40 lg:max-w-[27rem] 2xl:max-w-[35rem] object-cover object-center;
+        @apply max-w-40 lg:max-w-108 2xl:max-w-140 object-cover object-center;
       }
 
       .p1 {
-        @apply absolute bottom-1/2 left-[23%] z-[1] max-sm:left-[33%];
+        @apply absolute bottom-1/2 left-[23%] z-1 max-sm:left-[33%];
       }
 
       .p2 {
-        @apply absolute bottom-[40%] right-[17%] z-[3] max-sm:right-[37%];
+        @apply absolute bottom-[40%] right-[17%] z-3 max-sm:right-[37%];
       }
 
       .p3 {
-        @apply absolute bottom-1/4 right-[15%] z-[2] max-sm:right-[35%];
+        @apply absolute bottom-1/4 right-[15%] z-2 max-sm:right-[35%];
       }
 
       .p4 {
-        @apply absolute bottom-[15%] right-[10%] z-[1] max-sm:right-[30%];
+        @apply absolute bottom-[15%] right-[10%] z-1 max-sm:right-[30%];
       }
 
       .p5 {
@@ -271,11 +271,11 @@ body {
       }
 
       .p6 {
-        @apply absolute bottom-1/4 left-1/4 z-[2] max-sm:left-[35%];
+        @apply absolute bottom-1/4 left-1/4 z-2 max-sm:left-[35%];
       }
 
       .p7 {
-        @apply absolute bottom-[5%] left-[15%] z-[3] max-sm:left-[35%];
+        @apply absolute bottom-[5%] left-[15%] z-3 max-sm:left-[35%];
       }
     }
 
@@ -296,7 +296,7 @@ body {
     }
 
     #f-canvas {
-      @apply !w-full !h-dvh relative z-40;
+      @apply w-full! h-dvh! relative z-40;
     }
 
     .box {
