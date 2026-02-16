@@ -3,10 +3,10 @@ import { useMediaQuery } from "react-responsive";
 import gsap from "gsap";
 
 const ShowcaseView = () => {
-  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   useGSAP(() => {
-    if (!isTablet) {
+    if (!isMobile) {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: "#showcase",
@@ -23,7 +23,7 @@ const ShowcaseView = () => {
         })
         .to(".content", { opacity: 1, y: 0, ease: "power1.in" });
     }
-  }, [isTablet]);
+  }, [isMobile]);
 
   return (
     <section id="showcase">
