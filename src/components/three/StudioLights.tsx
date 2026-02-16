@@ -1,6 +1,6 @@
 import { Environment, Lightformer } from "@react-three/drei";
 
-const StudioLights = ({ color} ): string => {
+const StudioLights = ({ color = '#adb5bd'} ): string => {
   return (
     <group name="lights">
       <Environment resolution={256}>
